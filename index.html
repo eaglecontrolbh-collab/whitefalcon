@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>White Falcon Private Security Services Co. W.L.L. - Bahrain</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+brand: {
+gold: '#D4AF37',
+goldHover: '#B89628',
+amber: '#E5A93C',
+amberLight: '#FEF8EC',
+darkSlate: '#0F172A',
+bodyText: '#334155',
+slateLight: '#F8FAFC',
+cardBg: '#FFFFFF',
+accentBorder: '#E2E8F0'
+}
+},
+fontFamily: {
+sans: ['Inter', 'sans-serif'],
+arabic: ['Noto Sans Arabic', 'sans-serif']
+}
+}
+}
+}
+</script>
+<style>
+.gold-gradient-text {
+background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #996515 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.hero-bg {
+background-color: #F8FAFC;
+background-image: radial-gradient(#CBD5E1 0.75px, transparent 0.75px), radial-gradient(#CBD5E1 0.75px, #F8FAFC 0.75px);
+background-size: 30px 30px;
+background-position: 0 0, 15px 15px;
+}
+.glass-card {
+background: rgba(255, 255, 255, 0.95);
+backdrop-filter: blur(10px);
+}
+</style>
+</head>
+<body class="font-sans bg-brand-slateLight text-brand-bodyText antialiased leading-relaxed selection:bg-brand-amber selection:text-white">
+
+<!-- Top Announcement / Quick Info Bar -->
+<div class="bg-brand-darkSlate text-slate-300 text-xs sm:text-sm py-2 px-4 border-b border-slate-800">
+<div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+<div class="flex items-center space-x-4">
+<span class="flex items-center gap-1.5"><i data-lucide="shield-check" class="w-4 h-4 text-amber-400"></i> MOI & CID Approved Security Provider</span>
+<span class="hidden md:inline text-slate-500">|</span>
+<span class="hidden md:inline flex items-center gap-1"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-amber-400"></i> Sanabis, Kingdom of Bahrain</span>
+</div>
+<div class="flex items-center space-x-4 text-xs">
+<a href="tel:+97336491411" class="hover:text-amber-400 transition-colors flex items-center gap-1"><i data-lucide="phone" class="w-3 h-3"></i> +973 36491411</a>
+<a href="tel:+97335128799" class="hover:text-amber-400 transition-colors flex items-center gap-1"><i data-lucide="phone" class="w-3 h-3"></i> +973 35128799</a>
+<a href="mailto:gmwhitefalcon@gmail.com" class="hover:text-amber-400 transition-colors hidden lg:flex items-center gap-1"><i data-lucide="mail" class="w-3 h-3"></i> gmwhitefalcon@gmail.com</a>
+</div>
+</div>
+</div>
+
+<!-- Sticky Main Header -->
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+
+<!-- Brand / Logo -->
+<a href="#home" class="flex items-center space-x-3 group">
+<div class="w-11 h-11 bg-gradient-to-br from-amber-400 via-amber-500 to-amber-600 rounded-xl flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform">
+<i data-lucide="shield" class="w-7 h-7 fill-white/20"></i>
+</div>
+<div>
+<span class="block text-base sm:text-lg font-bold tracking-tight text-brand-darkSlate group-hover:text-amber-600 transition-colors leading-tight">
+WHITE FALCON
+</span>
+<span class="block text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-amber-600">
+Private Security Services CO. W.L.L.
+</span>
+<span class="block text-[10px] font-arabic text-slate-500 dir-rtl">
+شركة الصقر الأبيض لخدمات الأمن الخاصة ذ.م.م
+</span>
+</div>
+</a>
+
+<!-- Desktop Navigation -->
+<nav class="hidden lg:flex items-center space-x-6 text-sm font-medium">
+<a href="#home" class="text-slate-700 hover:text-amber-600 transition-colors">Home</a>
+<a href="#about" class="text-slate-700 hover:text-amber-600 transition-colors">About Us</a>
+<a href="#services" class="text-slate-700 hover:text-amber-600 transition-colors">Services</a>
+<a href="#cr-info" class="text-slate-700 hover:text-amber-600 transition-colors">CR Verification</a>
+<a href="#faq" class="text-slate-700 hover:text-amber-600 transition-colors">FAQ</a>
+<a href="#careers" class="text-slate-700 hover:text-amber-600 transition-colors">Careers</a>
+<a href="#contact" class="bg-brand-darkSlate hover:bg-slate-800 text-white px-5 py-2.5 rounded-lg transition-all shadow-sm hover:shadow text-sm">Contact Us</a>
+</nav>
+
+<!-- Mobile Menu Toggle Button -->
+<button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg text-slate-600 hover:text-brand-darkSlate hover:bg-slate-100 focus:outline-none" aria-label="Toggle Menu">
+<i data-lucide="menu" class="w-6 h-6"></i>
+</button>
+</div>
+
+<!-- Mobile Navigation Drawer -->
+<div id="mobile-menu" class="hidden lg:hidden border-b border-slate-200 bg-white px-4 pt-2 pb-6 space-y-3 shadow-lg">
+<a href="#home" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-amber-50 hover:text-amber-600">Home</a>
+<a href="#about" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-amber-50 hover:text-amber-600">About Us</a>
+<a href="#services" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-amber-50 hover:text-amber-600">Services</a>
+<a href="#cr-info" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-amber-50 hover:text-amber-600">CR Verification</a>
+<a href="#faq" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-amber-50 hover:text-amber-600">FAQ</a>
+<a href="#careers" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-amber-50 hover:text-amber-600">Careers</a>
+<a href="#contact" class="mobile-nav-link block w-full text-center bg-brand-darkSlate text-white px-4 py-2.5 rounded-lg font-medium shadow-sm">Contact Us</a>
+</div>
+</header>
+
+<section id="home" class="relative hero-bg py-16 sm:py-24 border-b border-slate-200 overflow-hidden">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="grid lg:grid-cols-12 gap-12 items-center">
+
+<div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-amber-800 text-xs sm:text-sm font-semibold">
+<i data-lucide="award" class="w-4 h-4 text-amber-600"></i> Approved & Certified in Kingdom of Bahrain
+</div>
+
+<h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-brand-darkSlate tracking-tight leading-tight">
+The New <span class="gold-gradient-text">Gold Standard</span> of Security & Safety in Bahrain
+</h1>
+
+<p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 font-normal">
+White Falcon Private Security Services Co. W.L.L. offers custom, high-caliber manned guarding, advanced electronic security, and strategic security consultancy tailored for individuals, government entities, and corporate organizations across the Kingdom.
+</p>
+
+<div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+<a href="#services" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-semibold px-7 py-3.5 rounded-xl shadow-lg shadow-amber-500/20 transition-all transform hover:-translate-y-0.5">
+<i data-lucide="shield-check" class="w-5 h-5"></i> Explore Our Services
+</a>
+<a href="#contact" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-brand-darkSlate border border-slate-300 font-semibold px-7 py-3.5 rounded-xl shadow-sm transition-all">
+<i data-lucide="phone-call" class="w-5 h-5 text-amber-600"></i> Contact Us
+</a>
+</div>
+
+<!-- Highlights Banner -->
+<div class="pt-8 grid grid-cols-2 sm:grid-cols-3 gap-4 border-t border-slate-200/80">
+<div class="bg-white/80 p-3.5 rounded-xl border border-slate-200/60 text-center lg:text-left shadow-2xs">
+<div class="text-amber-600 font-bold text-lg flex items-center justify-center lg:justify-start gap-1">
+<i data-lucide="check-circle-2" class="w-4 h-4"></i> MOI & CID
+</div>
+<div class="text-xs text-slate-500 font-medium">Ministry Approved Personnel</div>
+</div>
+<div class="bg-white/80 p-3.5 rounded-xl border border-slate-200/60 text-center lg:text-left shadow-2xs">
+<div class="text-amber-600 font-bold text-lg flex items-center justify-center lg:justify-start gap-1">
+<i data-lucide="clock" class="w-4 h-4"></i> 24 / 7
+</div>
+<div class="text-xs text-slate-500 font-medium">Protection & Monitoring</div>
+</div>
+<div class="col-span-2 sm:col-span-1 bg-white/80 p-3.5 rounded-xl border border-slate-200/60 text-center lg:text-left shadow-2xs">
+<div class="text-amber-600 font-bold text-lg flex items-center justify-center lg:justify-start gap-1">
+<i data-lucide="file-check-2" class="w-4 h-4"></i> CR Active
+</div>
+<div class="text-xs text-slate-500 font-medium">CR No. 139392 - 1</div>
+</div>
+</div>
+</div>
+
+<!-- Hero Graphic / Falcon Card -->
+<div class="lg:col-span-5 flex justify-center">
+<div class="relative w-full max-w-md bg-white rounded-2xl p-6 shadow-xl border border-slate-200/80 overflow-hidden group">
+<div class="absolute -top-12 -right-12 w-40 h-40 bg-amber-100 rounded-full blur-2xl opacity-60"></div>
+
+<div class="relative z-10 space-y-6">
+<div class="flex items-center justify-between border-b border-slate-100 pb-4">
+<div class="flex items-center space-x-3">
+<div class="p-2.5 bg-amber-50 text-amber-600 rounded-xl">
+<i data-lucide="shield-alert" class="w-8 h-8"></i>
+</div>
+<div>
+<h2 class="font-bold text-slate-900 text-sm">SECURITY ASSURANCE</h2>
+<p class="text-xs text-slate-500">Licensed & Regulated Provider</p>
+</div>
+</div>
+<span class="px-2.5 py-1 bg-emerald-100 text-emerald-800 text-xs font-semibold rounded-full">ACTIVE</span>
+</div>
+
+<p class="text-sm text-slate-600 italic">
+"Brute, beauty and valour and act, oh, air, pride, plume.."
+<span class="block text-xs font-normal text-slate-400 not-italic mt-1">— from The Windhover by Gerard Manley Hopkins</span>
+</p>
+
+<div class="bg-brand-slateLight p-4 rounded-xl border border-slate-200/70 space-y-2">
+<div class="text-xs font-semibold text-slate-700 flex items-center gap-1.5">
+<i data-lucide="building-2" class="w-4 h-4 text-amber-600"></i> Corporate Footprint
+</div>
+<p class="text-xs text-slate-500">
+Serving Ministries, Hypermarkets, Commercial Complexes, VIPs, Critical Assets, Ports, and Residential Communities across Bahrain.
+</p>
+</div>
+
+<div class="pt-2 flex justify-between items-center text-xs text-slate-500 border-t border-slate-100">
+<span>Kingdom of Bahrain</span>
+<span class="font-semibold text-amber-600">Absolute Gold Standard</span>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="about" class="py-20 bg-white border-b border-slate-200">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+<div class="text-center max-w-3xl mx-auto space-y-4">
+<h2 class="text-xs font-bold uppercase tracking-widest text-amber-600">About White Falcon</h2>
+<p class="text-3xl sm:text-4xl font-extrabold text-brand-darkSlate">Dedicated to Absolute Protection and Integrity</p>
+<p class="text-slate-600 text-base">
+White Falcon Private Security Services Co. W.L.L. is one of the most trusted security and safety solutions providers in the Kingdom of Bahrain. For years, we have delivered tailored, premium-grade safety solutions combining experienced personnel with cutting-edge tech.
+</p>
+</div>
+
+<div class="mt-16 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Strength 1 -->
+<div class="p-6 bg-brand-slateLight rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+<div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center mb-4">
+<i data-lucide="users" class="w-6 h-6"></i>
+</div>
+<h3 class="font-bold text-lg text-brand-darkSlate mb-2">Organized Management</h3>
+<p class="text-sm text-slate-600">
+Led by a structured and agile management team delivering rapid operational deployment and continuous oversight.
+</p>
+</div>
+
+<!-- Strength 2 -->
+<div class="p-6 bg-brand-slateLight rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+<div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center mb-4">
+<i data-lucide="badge-check" class="w-6 h-6"></i>
+</div>
+<h3 class="font-bold text-lg text-brand-darkSlate mb-2">MOI & CID Approved</h3>
+<p class="text-sm text-slate-600">
+All staff are thoroughly vetted, evaluated, and approved by the Ministry of Interior and Criminal Investigation Department (CID).
+</p>
+</div>
+
+<!-- Strength 3 -->
+<div class="p-6 bg-brand-slateLight rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+<div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center mb-4">
+<i data-lucide="cpu" class="w-6 h-6"></i>
+</div>
+<h3 class="font-bold text-lg text-brand-darkSlate mb-2">Technical Experts</h3>
+<p class="text-sm text-slate-600">
+Skilled electronic security engineers and technical specialists capable of designing, installing, and maintaining complex security arrays.
+</p>
+</div>
+
+<!-- Strength 4 -->
+<div class="p-6 bg-brand-slateLight rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+<div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center mb-4">
+<i data-lucide="truck" class="w-6 h-6"></i>
+</div>
+<h3 class="font-bold text-lg text-brand-darkSlate mb-2">Logistical Fleet</h3>
+<p class="text-sm text-slate-600">
+Robust infrastructure backed by a dedicated fleet of patrol and support vehicles for immediate transport and response across Bahrain.
+</p>
+</div>
+</div>
+
+<!-- Client Reach Banner -->
+<div class="mt-12 bg-brand-amberLight border border-amber-200 p-6 sm:p-8 rounded-2xl">
+<h3 class="font-bold text-amber-900 text-lg mb-4 text-center sm:text-left">Sectors We Shield in Bahrain:</h3>
+<div class="flex flex-wrap gap-2.5 justify-center sm:justify-start text-xs sm:text-sm">
+<span class="bg-white text-slate-800 px-3.5 py-1.5 rounded-lg border border-amber-200/80 font-medium flex items-center gap-1.5"><i data-lucide="landmark" class="w-4 h-4 text-amber-600"></i> Government Ministries</span>
+<span class="bg-white text-slate-800 px-3.5 py-1.5 rounded-lg border border-amber-200/80 font-medium flex items-center gap-1.5"><i data-lucide="shopping-bag" class="w-4 h-4 text-amber-600"></i> Hypermarkets & Retail</span>
+<span class="bg-white text-slate-800 px-3.5 py-1.5 rounded-lg border border-amber-200/80 font-medium flex items-center gap-1.5"><i data-lucide="building" class="w-4 h-4 text-amber-600"></i> Corporate HQ & Commercial Centres</span>
+<span class="bg-white text-slate-800 px-3.5 py-1.5 rounded-lg border border-amber-200/80 font-medium flex items-center gap-1.5"><i data-lucide="hotel" class="w-4 h-4 text-amber-600"></i> Hotels & Hospitality</span>
+<span class="bg-white text-slate-800 px-3.5 py-1.5 rounded-lg border border-amber-200/80 font-medium flex items-center gap-1.5"><i data-lucide="graduation-cap" class="w-4 h-4 text-amber-600"></i> Schools & Academies</span>
+<span class="bg-white text-slate-800 px-3.5 py-1.5 rounded-lg border border-amber-200/80 font-medium flex items-center gap-1.5"><i data-lucide="warehouse" class="w-4 h-4 text-amber-600"></i> Warehouses & Yards</span>
+<span class="bg-white text-slate-800 px-3.5 py-1.5 rounded-lg border border-amber-200/80 font-medium flex items-center gap-1.5"><i data-lucide="radio-tower" class="w-4 h-4 text-amber-600"></i> Telecom Towers</span>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="services" class="py-20 bg-brand-slateLight border-b border-slate-200">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+<div class="text-center max-w-3xl mx-auto space-y-4 mb-12">
+<h2 class="text-xs font-bold uppercase tracking-widest text-amber-600">Services Portfolio</h2>
+<p class="text-3xl sm:text-4xl font-extrabold text-brand-darkSlate">Comprehensive Safety Solutions</p>
+<p class="text-slate-600 text-sm sm:text-base">
+From physical guard protection to high-tech electronic monitoring and strategic risk consultancy, we provide end-to-end security measures.
+</p>
+</div>
+
+<!-- Category Filter Tabs -->
+<div class="flex flex-wrap justify-center gap-2 mb-10" id="services-tabs">
+<button onclick="filterServices('all')" class="tab-btn active-tab px-5 py-2.5 rounded-xl font-medium text-sm transition-all bg-brand-darkSlate text-white">All Services</button>
+<button onclick="filterServices('guarding')" class="tab-btn px-5 py-2.5 rounded-xl font-medium text-sm transition-all bg-white text-slate-700 hover:bg-slate-100 border border-slate-200">Guarding Services</button>
+<button onclick="filterServices('electronic')" class="tab-btn px-5 py-2.5 rounded-xl font-medium text-sm transition-all bg-white text-slate-700 hover:bg-slate-100 border border-slate-200">Electronic Security</button>
+<button onclick="filterServices('consultancy')" class="tab-btn px-5 py-2.5 rounded-xl font-medium text-sm transition-all bg-white text-slate-700 hover:bg-slate-100 border border-slate-200">Consultancy</button>
+<button onclick="filterServices('special')" class="tab-btn px-5 py-2.5 rounded-xl font-medium text-sm transition-all bg-white text-slate-700 hover:bg-slate-100 border border-slate-200">Valet & Special</button>
+</div>
+
+<!-- Service Cards Grid -->
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+<!-- 1. Guarding Services -->
+<div class="service-card guarding bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-lg transition-all">
+<div class="flex items-center justify-between mb-4">
+<div class="p-3 bg-amber-50 text-amber-600 rounded-xl">
+<i data-lucide="user-check" class="w-6 h-6"></i>
+</div>
+<span class="text-xs font-semibold px-3 py-1 bg-amber-100 text-amber-800 rounded-full">Guarding</span>
+</div>
+<h3 class="text-xl font-bold text-brand-darkSlate mb-3">Manned Guarding Services</h3>
+<p class="text-slate-600 text-sm mb-4">
+Trained, uniformed male and female security guards equipped with standard gear like wireless communication systems, flashlights, batteries, whistles, and notebooks.
+</p>
+<ul class="space-y-2 text-xs text-slate-600 border-t border-slate-100 pt-4">
+<li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Event coverage (marriages, concerts, meetings)</li>
+<li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Special close protection (VIP Body Guards)</li>
+<li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Guarding for communication towers & warehouses</li>
+</ul>
+</div>
+
+<!-- 2. Electronic Security Systems -->
+<div class="service-card electronic bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-lg transition-all">
+<div class="flex items-center justify-between mb-4">
+<div class="p-3 bg-blue-50 text-blue-600 rounded-xl">
+<i data-lucide="camera" class="w-6 h-6"></i>
+</div>
+<span class="text-xs font-semibold px-3 py-1 bg-blue-100 text-blue-800 rounded-full">Electronic</span>
+</div>
+<h3 class="text-xl font-bold text-brand-darkSlate mb-3">Electronic Security Solutions</h3>
+<p class="text-slate-600 text-sm mb-4">
+In close partnership with residential and commercial clients, we develop, install, and manage custom electronic security right from conceptualization to maintenance.
+</p>
+<ul class="space-y-1.5 text-xs text-slate-600 border-t border-slate-100 pt-4 grid grid-cols-2 gap-1">
+<li class="flex items-center gap-1.5"><i data-lucide="dot" class="w-4 h-4 text-amber-500"></i> CCTV Systems</li>
+<li class="flex items-center gap-1.5"><i data-lucide="dot" class="w-4 h-4 text-amber-500"></i> ANPR Recognition</li>
+<li class="flex items-center gap-1.5"><i data-lucide="dot" class="w-4 h-4 text-amber-500"></i> Access Control</li>
+<li class="flex items-center gap-1.5"><i data-lucide="dot" class="w-4 h-4 text-amber-500"></i> Intruder Alarms</li>
+<li class="flex items-center gap-1.5"><i data-lucide="dot" class="w-4 h-4 text-amber-500"></i> Perimeter Detection</li>
+<li class="flex items-center gap-1.5"><i data-lucide="dot" class="w-4 h-4 text-amber-500"></i> Fire Alarm Systems</li>
+<li class="flex items-center gap-1.5"><i data-lucide="dot" class="w-4 h-4 text-amber-500"></i> Fibre Transmission</li>
+<li class="flex items-center gap-1.5"><i data-lucide="dot" class="w-4 h-4 text-amber-500"></i> Public Address (PA)</li>
+</ul>
+</div>
+
+<!-- 3. Security Consultancy -->
+<div class="service-card consultancy bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-lg transition-all">
+<div class="flex items-center justify-between mb-4">
+<div class="p-3 bg-purple-50 text-purple-600 rounded-xl">
+<i data-lucide="file-text" class="w-6 h-6"></i>
+</div>
+<span class="text-xs font-semibold px-3 py-1 bg-purple-100 text-purple-800 rounded-full">Consultancy</span>
+</div>
+<h3 class="text-xl font-bold text-brand-darkSlate mb-3">Consultancy Services</h3>
+<p class="text-slate-600 text-sm mb-4">
+Strategic security planning, vulnerability assessments, and safety rule formulation for corporate and national infrastructure assets.
+</p>
+<ul class="space-y-2 text-xs text-slate-600 border-t border-slate-100 pt-4">
+<li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Threat analysis and response strategy</li>
+<li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Risk assessment reports & security planning</li>
+<li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Vulnerability reports for airports, refineries & factories</li>
+<li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Fire safety plans & evacuation rehearsals</li>
+</ul>
+</div>
+
+<!-- 4. Valet Parking Services -->
+<div class="service-card special bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-lg transition-all">
+<div class="flex items-center justify-between mb-4">
+<div class="p-3 bg-emerald-50 text-emerald-600 rounded-xl">
+<i data-lucide="car" class="w-6 h-6"></i>
+</div>
+<span class="text-xs font-semibold px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full">Valet</span>
+</div>
+<h3 class="text-xl font-bold text-brand-darkSlate mb-3">Valet Parking Services</h3>
+<p class="text-slate-600 text-sm mb-4">
+Value-added valet parking service for events of all scales. Well-trained and experienced professionals ensure vehicle handling is smooth, secure, and hassle-free.
+</p>
+<ul class="space-y-2 text-xs text-slate-600 border-t border-slate-100 pt-4">
+<li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Courteous, verified valet drivers</li>
+<li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Organized guest parking management</li>
+</ul>
+</div>
+
+<!-- 5. K9 & Sniffer Dogs -->
+<div class="service-card special bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-lg transition-all">
+<div class="flex items-center justify-between mb-4">
+<div class="p-3 bg-rose-50 text-rose-600 rounded-xl">
+<i data-lucide="dog" class="w-6 h-6"></i>
+</div>
+<span class="text-xs font-semibold px-3 py-1 bg-rose-100 text-rose-800 rounded-full">Special K9</span>
+</div>
+<h3 class="text-xl font-bold text-brand-darkSlate mb-3">Sniffer Dogs / K9 Units</h3>
+<p class="text-slate-600 text-sm mb-4">
+Specialized K9 search and detection units for explosive detection, narcotics sweeping, and high-level venue security screening.
+</p>
+<ul class="space-y-2 text-xs text-slate-600 border-t border-slate-100 pt-4">
+<li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Certified handler & canine teams</li>
+<li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Venue & vehicle inspection</li>
+</ul>
+</div>
+
+<!-- 6. Marine Security Solutions -->
+<div class="service-card special bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-lg transition-all">
+<div class="flex items-center justify-between mb-4">
+<div class="p-3 bg-cyan-50 text-cyan-600 rounded-xl">
+<i data-lucide="anchor" class="w-6 h-6"></i>
+</div>
+<span class="text-xs font-semibold px-3 py-1 bg-cyan-100 text-cyan-800 rounded-full">Marine</span>
+</div>
+<h3 class="text-xl font-bold text-brand-darkSlate mb-3">Marine Security Solutions</h3>
+<p class="text-slate-600 text-sm mb-4">
+Tailored maritime security protection for ports, jetties, marine facilities, and offshore critical infrastructure assets across coastal waters.
+</p>
+<ul class="space-y-2 text-xs text-slate-600 border-t border-slate-100 pt-4">
+<li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Coastal surveillance & guarding</li>
+<li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Port facility protection</li>
+</ul>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="cr-info" class="py-16 bg-white border-b border-slate-200">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl p-6 sm:p-10 text-white shadow-xl relative overflow-hidden">
+<div class="absolute top-0 right-0 -mt-10 -mr-10 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl"></div>
+
+<div class="relative z-10 grid lg:grid-cols-12 gap-8 items-center">
+<div class="lg:col-span-7 space-y-4">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-semibold uppercase tracking-wider">
+<i data-lucide="shield-check" class="w-4 h-4"></i> Ministry of Industry and Commerce
+</div>
+<h2 class="text-2xl sm:text-3xl font-bold">Commercial Registration Certificate</h2>
+<p class="text-slate-300 text-sm">
+White Falcon Private Security Services Co. W.L.L. is an officially registered, active entity with the Kingdom of Bahrain Commercial Registration Directorate.
+</p>
+
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4">
+<div class="bg-slate-800/80 p-3.5 rounded-xl border border-slate-700">
+<span class="text-xs text-slate-400 block">Registration No.</span>
+<span class="text-base font-bold text-amber-400">139392 - 1</span>
+</div>
+<div class="bg-slate-800/80 p-3.5 rounded-xl border border-slate-700">
+<span class="text-xs text-slate-400 block">CR Status</span>
+<span class="text-base font-bold text-emerald-400">ACTIVE</span>
+</div>
+<div class="col-span-2 sm:col-span-1 bg-slate-800/80 p-3.5 rounded-xl border border-slate-700">
+<span class="text-xs text-slate-400 block">Registration Type</span>
+<span class="text-xs font-semibold text-white">W.L.L. (Limited Liability)</span>
+</div>
+</div>
+</div>
+
+<div class="lg:col-span-5 bg-slate-800/90 rounded-2xl p-5 border border-slate-700 space-y-3 text-xs">
+<div class="flex justify-between pb-2 border-b border-slate-700">
+<span class="text-slate-400">Group Name:</span>
+<span class="font-semibold text-right">WHITE FALCON PRIVATE SECURITY SERVICES CO. W.L.L</span>
+</div>
+<div class="flex justify-between pb-2 border-b border-slate-700">
+<span class="text-slate-400">Arabic Name:</span>
+<span class="font-semibold text-right font-arabic">شركة الصقر الأبيض لخدمات الأمن الخاصة ذ.م.م</span>
+</div>
+<div class="flex justify-between pb-2 border-b border-slate-700">
+<span class="text-slate-400">Registration Date:</span>
+<span class="font-semibold">29/07/2020</span>
+</div>
+<div class="flex justify-between pb-2 border-b border-slate-700">
+<span class="text-slate-400">Due / Renewal Date:</span>
+<span class="font-semibold text-amber-400">29/07/2027</span>
+</div>
+<div class="pt-1">
+<span class="text-slate-400 block mb-1">Commercial Address:</span>
+<span class="font-medium text-slate-200">Flat/Shop 52, Building 485, Road 1010, Block 410, SANABIS, Kingdom of Bahrain</span>
+</div>
+<div class="pt-1">
+<span class="text-slate-400 block mb-1">Licensed Activities:</span>
+<div class="flex flex-wrap gap-1">
+<span class="bg-amber-500/20 text-amber-300 px-2 py-0.5 rounded text-[11px]">Private security activities</span>
+<span class="bg-amber-500/20 text-amber-300 px-2 py-0.5 rounded text-[11px]">Sale/Trade of Safety Systems</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="faq" class="py-20 bg-brand-slateLight border-b border-slate-200">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center space-y-4 mb-12">
+<h2 class="text-xs font-bold uppercase tracking-widest text-amber-600">Got Questions?</h2>
+<p class="text-3xl sm:text-4xl font-extrabold text-brand-darkSlate">Frequently Asked Questions</p>
+<p class="text-slate-600 text-sm">Find quick answers regarding our licenses, service deployments, and locations.</p>
+</div>
+
+<div class="space-y-4" id="faq-accordion">
+
+<!-- FAQ Item 1 -->
+<div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-2xs">
+<button onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-5 text-left font-semibold text-slate-800 hover:text-amber-600 transition-colors">
+<span>Are your security guards certified by official Bahrain authorities?</span>
+<i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform duration-200"></i>
+</button>
+<div class="faq-answer hidden px-5 pb-5 text-sm text-slate-600 border-t border-slate-100 pt-3">
+Yes. All male and female security guards under White Falcon Private Security Services Co. W.L.L. are evaluated, vetted, and formally approved by the Ministry of Interior and the Criminal Investigation Department (CID) in the Kingdom of Bahrain.
+</div>
+</div>
+
+<!-- FAQ Item 2 -->
+<div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-2xs">
+<button onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-5 text-left font-semibold text-slate-800 hover:text-amber-600 transition-colors">
+<span>What types of electronic security systems do you supply and install?</span>
+<i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform duration-200"></i>
+</button>
+<div class="faq-answer hidden px-5 pb-5 text-sm text-slate-600 border-t border-slate-100 pt-3">
+We design and install a wide spectrum of systems including CCTV, Automatic Number Plate Recognition (ANPR), Access Control Systems, Intruder Alarm Systems, Perimeter Detection, Fire Detection & Alarms, Fibre Optic Transmission, and Public Address & Voice Evacuation Systems.
+</div>
+</div>
+
+<!-- FAQ Item 3 -->
+<div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-2xs">
+<button onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-5 text-left font-semibold text-slate-800 hover:text-amber-600 transition-colors">
+<span>Do you provide security for private events, VIP protection, and Valet services?</span>
+<i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform duration-200"></i>
+</button>
+<div class="faq-answer hidden px-5 pb-5 text-sm text-slate-600 border-t border-slate-100 pt-3">
+Yes. We provide complete event security coverage for concerts, weddings, and corporate meetings, along with dedicated VIP Body Guard close protection services, Sniffer Dogs (K9), and organized event valet parking management.
+</div>
+</div>
+
+<!-- FAQ Item 4 -->
+<div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-2xs">
+<button onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-5 text-left font-semibold text-slate-800 hover:text-amber-600 transition-colors">
+<span>Where is White Falcon located in Bahrain?</span>
+<i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform duration-200"></i>
+</button>
+<div class="faq-answer hidden px-5 pb-5 text-sm text-slate-600 border-t border-slate-100 pt-3">
+Our main office is situated in Sanabis: Flat/Shop 52, Building 485, Road 1010, Block 410, Sanabis, Kingdom of Bahrain.
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="careers" class="py-20 bg-white border-b border-slate-200">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid lg:grid-cols-12 gap-12 items-center">
+
+<div class="lg:col-span-5 space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-50 text-amber-700 text-xs font-semibold">
+<i data-lucide="briefcase" class="w-4 h-4"></i> Join Our Security Team
+</div>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-brand-darkSlate">Build Your Career with White Falcon</h2>
+<p class="text-slate-600 text-sm">
+We are continuously seeking disciplined, qualified, and motivated male and female professionals to join our elite team of guards, technicians, and supervisory staff in Bahrain.
+</p>
+
+<div class="space-y-3 text-xs sm:text-sm text-slate-600">
+<div class="flex items-center gap-3">
+<div class="p-2 bg-amber-100 text-amber-700 rounded-lg"><i data-lucide="check-circle" class="w-4 h-4"></i></div>
+<span>Ministry of Interior Vetting Support</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="p-2 bg-amber-100 text-amber-700 rounded-lg"><i data-lucide="check-circle" class="w-4 h-4"></i></div>
+<span>Comprehensive Training & Equipment Provided</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="p-2 bg-amber-100 text-amber-700 rounded-lg"><i data-lucide="check-circle" class="w-4 h-4"></i></div>
+<span>Equal Opportunity Employer (Male & Female Personnel)</span>
+</div>
+</div>
+</div>
+
+<div class="lg:col-span-7">
+<div class="bg-brand-slateLight p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-md">
+<h3 class="text-xl font-bold text-brand-darkSlate mb-4">Submit Job Application</h3>
+
+<form id="careers-form" onsubmit="handleCareerSubmit(event)" class="space-y-4">
+<div class="grid sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-xs font-semibold text-slate-700 mb-1">Full Name *</label>
+<input type="text" required class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 bg-white" placeholder="John Doe">
+</div>
+<div>
+<label class="block text-xs font-semibold text-slate-700 mb-1">Phone Number *</label>
+<input type="tel" required class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 bg-white" placeholder="+973 3XXXXXXX">
+</div>
+</div>
+
+<div class="grid sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-xs font-semibold text-slate-700 mb-1">Email Address *</label>
+<input type="email" required class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 bg-white" placeholder="you@example.com">
+</div>
+<div>
+<label class="block text-xs font-semibold text-slate-700 mb-1">Position Applying For *</label>
+<select required class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 bg-white">
+<option value="">Select Position</option>
+<option value="Guard (Male)">Security Guard (Male)</option>
+<option value="Guard (Female)">Security Guard (Female)</option>
+<option value="VIP Bodyguard">VIP Close Protection / Bodyguard</option>
+<option value="Electronic Technician">Electronic Security Technician</option>
+<option value="Supervisor">Security Supervisor</option>
+<option value="Valet Driver">Valet Parking Driver</option>
+</select>
+</div>
+</div>
+
+<div>
+<label class="block text-xs font-semibold text-slate-700 mb-1">Attach CV / Resume (PDF / DOC)</label>
+<input type="file" accept=".pdf,.doc,.docx" class="w-full text-xs text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-amber-100 file:text-amber-800 hover:file:bg-amber-200 cursor-pointer">
+</div>
+
+<div>
+<label class="block text-xs font-semibold text-slate-700 mb-1">Brief Cover Note</label>
+<textarea rows="3" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 bg-white" placeholder="Mention your previous experience in security..."></textarea>
+</div>
+
+<button type="submit" class="w-full bg-brand-darkSlate hover:bg-slate-800 text-white font-semibold py-3 rounded-xl transition-all shadow-sm flex items-center justify-center gap-2">
+<i data-lucide="send" class="w-4 h-4"></i> Submit Application
+</button>
+</form>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="contact" class="py-20 bg-brand-slateLight">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-3xl mx-auto space-y-4 mb-12">
+<h2 class="text-xs font-bold uppercase tracking-widest text-amber-600">Get In Touch</h2>
+<p class="text-3xl sm:text-4xl font-extrabold text-brand-darkSlate">Contact Our Security Team</p>
+<p class="text-slate-600 text-sm">Have an inquiry or require immediate security deployment? Reach out to us now.</p>
+</div>
+
+<div class="grid lg:grid-cols-12 gap-8">
+
+<!-- Contact Details -->
+<div class="lg:col-span-5 space-y-6">
+<div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+<h3 class="font-bold text-lg text-brand-darkSlate border-b border-slate-100 pb-3">Contact Information</h3>
+
+<div class="flex items-start space-x-4">
+<div class="p-3 bg-amber-50 text-amber-600 rounded-xl mt-1">
+<i data-lucide="phone-call" class="w-5 h-5"></i>
+</div>
+<div>
+<span class="text-xs text-slate-400 font-semibold block">DIRECT PHONE / MOBILE</span>
+<a href="tel:+97336491411" class="text-sm font-bold text-slate-800 hover:text-amber-600 block">+973 36491411</a>
+<a href="tel:+97335128799" class="text-sm font-bold text-slate-800 hover:text-amber-600 block">+973 35128799</a>
+</div>
+</div>
+
+<div class="flex items-start space-x-4">
+<div class="p-3 bg-amber-50 text-amber-600 rounded-xl mt-1">
+<i data-lucide="mail" class="w-5 h-5"></i>
+</div>
+<div>
+<span class="text-xs text-slate-400 font-semibold block">EMAIL ADDRESS</span>
+<a href="mailto:gmwhitefalcon@gmail.com" class="text-sm font-bold text-slate-800 hover:text-amber-600">gmwhitefalcon@gmail.com</a>
+</div>
+</div>
+
+<div class="flex items-start space-x-4">
+<div class="p-3 bg-amber-50 text-amber-600 rounded-xl mt-1">
+<i data-lucide="map-pin" class="w-5 h-5"></i>
+</div>
+<div>
+<span class="text-xs text-slate-400 font-semibold block">COMMERCIAL OFFICE</span>
+<p class="text-sm text-slate-700 leading-snug">
+Flat/Shop 52, Building 485, Road 1010, Block 410, SANABIS, Kingdom of Bahrain
+</p>
+</div>
+</div>
+</div>
+
+<!-- CR Quick Reference Card -->
+<div class="bg-amber-50 border border-amber-200 p-5 rounded-2xl flex items-center justify-between">
+<div>
+<span class="text-xs font-bold text-amber-900 block">Commercial Registration</span>
+<span class="text-sm font-semibold text-amber-700">CR No. 139392 - 1 (Active)</span>
+</div>
+<i data-lucide="shield-check" class="w-8 h-8 text-amber-600"></i>
+</div>
+</div>
+
+<!-- Contact Inquiry Form -->
+<div class="lg:col-span-7 bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
+<h3 class="text-xl font-bold text-brand-darkSlate mb-4">Send Us a Direct Message</h3>
+
+<form id="contact-form" onsubmit="handleContactSubmit(event)" class="space-y-4">
+<div class="grid sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-xs font-semibold text-slate-700 mb-1">Your Name *</label>
+<input type="text" required class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500" placeholder="Full Name">
+</div>
+<div>
+<label class="block text-xs fon
